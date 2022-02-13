@@ -7,7 +7,7 @@ app.use(express.static('public'));
 
 
 
-app.get( '/home', (req, res) =>{
+app.get( '/', (req, res) =>{
     res.sendFile(path.join( __dirname, '/views/index.html'))
 })
 
@@ -31,7 +31,7 @@ app.get( '/hopper', (req, res) =>{
     res.sendFile(path.join( __dirname, '/views/hopper.html'))
 })
 
-app.get( '/index', (req, res) =>{
+app.get( '/home', (req, res) =>{
     res.sendFile(path.join( __dirname, '/views/index.html'))
 })
 
